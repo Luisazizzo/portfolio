@@ -1,0 +1,144 @@
+:root {
+  --primario: #dc7db5;
+  --chiaro: #fffdfb;
+  --scuro: #ede3d9;
+  --prugna: #452c47;
+  --border: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: "Source Serif Pro", serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--scuro);
+  padding: 30px;
+  color: var(--prugna);
+}
+.container {
+  background-color: var(--chiaro);
+  padding: 20px;
+  background-image: url("img/images.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--primario);
+  margin-left: 10px;
+}
+.bar {
+  background-color: var(--primario);
+  border-radius: var(--border);
+  color: var(--chiaro);
+  margin: 40px 0;
+  padding-left: 20px;
+  font-size: 15px;
+}
+section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section .img {
+  border: 2px solid var(--primario);
+  border-radius: var(--border);
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  filter: brightness(0.3);
+  transition: all 0.5s;
+}
+section:hover .img {
+  filter: brightness(1);
+}
+.img5 {
+  background-image: url("img/mc-donalds.png");
+}
+.img1 {
+  background-image: url("img/progetto1.png");
+}
+.img2 {
+  background-image: url("img/progetto2.png");
+}
+.img3 {
+  background-image: url("img/progetto3.png");
+}
+.img4 {
+  background-image: url("img/traviling.png");
+}
+
+section .text {
+  margin-left: 20px;
+}
+section .text h3 {
+  font-size: 25px;
+}
+footer {
+  background-color: var(--primario);
+  width: 100%;
+  height: 120px;
+  border-radius: var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-top: 80px;
+}
+footer .logo {
+  color: var(--chiaro);
+  font-size: 40px;
+}
+.social i {
+  font-size: 40px;
+  margin-left: 15px;
+  color: var(--chiaro);
+  transition: all 0.6s;
+}
+i:hover {
+  font-size: 50px;
+}
+@media screen and (max-width: 900px) {
+  section .img {
+    filter: brightness(1);
+  }
+  .img5 {
+    background-image: url("img/mc-mobile.png");
+  }
+  .img4 {
+    background-image: url("img/traviling-mobile.png");
+  }
+  .img1 {
+    background-image: url("img/progetto1-mobile.png");
+  }
+  .img2 {
+    background-image: url("img/progetto2-mobile.png");
+  }
+  .img3 {
+    background-image: url("img/progetto3-mobile.png");
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 10px;
+  }
+  footer .logo {
+    font-size: 24px;
+  }
+  .social i {
+    font-size: 20px;
+    margin-left: 8px;
+  }
+}

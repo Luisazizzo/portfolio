@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Heebo", sans-serif;
+  background-color: #0b1d26;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+}
+h4 {
+  font-size: 25px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header {
+  background-image: url("img/mont1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding: 30px;
+  position: relative;
+}
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  background: rgb(11, 29, 38);
+  background: linear-gradient(
+    0deg,
+    rgba(11, 29, 38, 1) 0%,
+    rgba(11, 29, 38, 0.5) 30%
+  );
+  z-index: 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: auto;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+header h1 {
+  position: relative;
+  z-index: 1;
+  margin: 100px auto;
+  width: 500px;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.content {
+  min-height: 500px;
+  width: 80%;
+  min-width: 780px;
+  max-width: 1100px;
+  margin: -100px auto 0 auto;
+  position: relative;
+  z-index: 1;
+}
+section {
+  margin-bottom: 150px;
+  position: relative;
+}
+.section-content {
+  display: flex;
+  justify-content: space-between;
+}
+.numero {
+  font-size: 200px;
+  font-weight: bold;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  opacity: 0.2;
+  letter-spacing: -10px;
+}
+
+.right-number {
+  left: 455px;
+}
+.text-section {
+  width: 400px;
+  margin: 50px;
+}
+.text-section h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 40px;
+}
+.yellow-title {
+  position: relative;
+  margin-bottom: 10px;
+}
+.linea {
+  background: #fbd784;
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 10px;
+}
+.yellow-title p {
+  margin-left: 70px;
+  text-transform: uppercase;
+  font-family: "DM Serif Display", serif;
+  color: #fbd784;
+}
+.immagine {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 350px;
+}
+.img1 {
+  background-image: url("img/mont2.jpeg");
+}
+.img2 {
+  background-image: url("img/mont3.jpeg");
+}
+.img3 {
+  background-image: url("img/mont.jpeg");
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 30%;
+}
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 70px;
+}
+.link h2 {
+  color: #fbd784;
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.link li {
+  list-style: none;
+  line-height: 30px;
+}
+footer h1,
+footer h2 {
+  margin-bottom: 20px;
+}
+.freccia {
+  color: #fbd784;
+  margin-top: 10px;
+}
+.freccia i {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    width: 100%;
+    min-width: 0px;
+    max-width: none;
+    padding: 0 20px;
+    margin: 0;
+  }
+  header h1 {
+    width: 80%;
+  }
+  .section-content {
+    flex-direction: column;
+  }
+  .right-number {
+    left: -60px;
+  }
+  .text-section {
+    margin: 50px 0;
+    width: auto;
+  }
+  .text-section p {
+    padding: 0 40px 0 0;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  div h4 {
+    font-size: 18px;
+  }
+  nav li {
+    font-size: 12px;
+  }
+  div a {
+    font-size: 12px;
+  }
+}

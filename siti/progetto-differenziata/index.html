@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mio progetto</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebfb90c305.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mask"></div>
+    <header id="ancora1">
+    <div class="top-bar">
+        <h2 class="logo">Company Name</h2>
+        <nav>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <ul class="menu" id="giuseppe">
+                <li><a href="#ancora1"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#ancora2"><i class="fa-solid fa-circle-user"></i>Chi siamo</a></li>
+                <li><a href="#ancora3"><i class="fa-solid fa-trash-can"></i></i>Differenziata</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero">
+        <h1>Welcome to free sketch template</h1>
+        <h3>habitasse vestilbulum a mi odio ut rutrum mauris leo lorem</h3>
+    </div>
+    </header>
+    <section class="info" id="ancora2">
+        <div class="left">
+            <h3>Chi siamo</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat soluta hic neque quod, vero aliquid,
+                deleniti cum accusantium asperiores nesciunt inventore sequi reiciendis odit aspernatur,
+                aliquam fugit et consequatur maiores!
+            </p>
+        </div>
+        <div class="right">
+
+        </div>
+        <div style="clear: both"></div>
+    </section>
+    <section class="raccolta_differenziata" id="ancora3">
+        <h1><i class="fa-solid fa-calendar-days" fa-2x></i>Raccolta differenziata</h1>
+        <div class="grid">
+            <div class="differenziata">Lunedì<br>
+                <p class="diff">umido</p>
+            </div>
+            <div class="differenziata">Martedì<br>
+            <p class="diff">Plastica</p>
+            </div>
+            <div class="differenziata">Mercoleì<br>
+            <p class="diff">Carta</p>
+            </div>
+            <div class="differenziata">Giovedì<br>
+            <p class="diff">Umido</p>
+            </div>
+            <div class="differenziata">Venerdì<br>
+            <p class="diff">Vetro/Lattine</p>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </section>
+
+        
+    <footer>
+        <div class="home">
+            <h3>Home</h3>
+            <p>Lorem ipsum dolor sit amet<br>
+               consectetur adipisicing elit.<br>
+               Architecto maiores temporibus<br>
+               odio fuga cumque dicta ut<br>
+               vel minima commodi repellat</p>
+        </div>
+        <div class="chi-siamo">
+            <h3>Dove siamo</h3>
+            <p>Lorem, ipsum dolor sit amet<br>
+               consectetur adipisicing elit.<br> 
+               Laborum vero quas libero nobis eveniet<br>
+               tempore earum quidem accusantium.</p>
+        </div>
+        <div class="contatti">
+            <h3>Contatti</h3>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+    </footer>
+    
+    <script>
+        document.onclick = function(e) {
+            if (e.srcElement.className === 'fa-solid fa-bars') {
+                const mask = document.querySelector('.mask')
+                mask.classList.toggle('show-mask')
+                const menu = document.querySelector('#giuseppe')
+                menu.classList.toggle('show-menu')
+            }
+    }
+    </script>
+
+</body>
+</html>

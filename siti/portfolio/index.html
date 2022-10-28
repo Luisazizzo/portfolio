@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebfb90c305.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="menu" onclick="">
+            <div class="linea-menu"></div>
+            <div class="linea-menu"></div>
+            <div class="linea-menu"></div>
+        </div>
+        <div class="left-content">
+        <div class="img"></div>
+        <p class="descrizione">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis libero expedita molestiae illum! Deleniti,
+            omnis, ab beatae itaque veniam officia fugiat necessitatibus.</p>
+
+            <div class="icone">
+                <div class="riga">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <p class="title">Anni</p>
+                    <p class="title2">38</p>
+                </div>
+                <div class="riga">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <p class="title">Occupazione</p>
+                    <p class="title2">web designer</p>
+                </div>
+                <div class="riga">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="title">Stato</p>
+                    <p class="title2">Sposato</p>
+                </div>
+                <div class="riga">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="title">Localizzazione</p>
+                    <p class="title2">Bagheria,PA</p>
+                </div>
+            </div>
+            <div class="contenitore">
+                <div class="box">Paziente</div>
+                <div class="box">Intelligente</div>
+                <div class="box">Onesto</div>
+                <div class="box">Amorevole</div>
+            </div>         
+        </div> 
+        <div class="right-content">
+            <div>
+                <h1>Giuseppe Senettone</h1>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                quis vero incidunt ipsam ab et deserunt eum itaque ad velit  
+                nulla atque amet! Harum ratione porro possimus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Laudantium placeat minus totam tempore, voluptatem dignissimos! 
+                Iste excepturi quam, repellat amet at sapiente deleniti!</p>
+            </div>
+            <div class="list-container">
+                <div class="box-info">
+                    <h3>Needs/Goals</h3>
+                    <ul>
+                        <li>Lorem impsum dolor sit amet,<br>
+                        consecutive adipisicing elit.</li>
+                        <li>Lorem impsum dolor sit amet,<br>
+                        consecutive adipisicing elit.</li>
+                        <li>Lorem impsum dolor sit amet,<br>
+                            consecutive adipisicing elit.</li>
+                    </ul>
+                </div>
+                <div class="box-info">
+                    <h3>Pain points</h3>
+                    <ul>
+                        <li>Lorem impsum dolor sit amet,<br>
+                        consecutive adipisicing elit.</li>
+                        <li>Lorem impsum dolor sit amet,<br>
+                        consecutive adipisicing elit.</li>
+                        <li>Lorem impsum dolor sit amet,<br>
+                            consecutive adipisicing elit.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-container">
+              <div class="box-info">
+                <h3>Favorite apps</h3>
+                <div class="apps">
+                    <img src="dazn.png" alt="">
+                    <img src="duolingo.png" alt="">
+                    <img src="music.png" alt="">
+                    <img src="netflix.png" alt="">
+                    <img src="play.png" alt="">
+                </div>
+              </div> 
+              <div class="box-info">
+                <h3>Personality</h3>
+                <div class="puntini">
+                    <div class="blocco-linea">
+                        <div class="testi">
+                            <div>lorem</div>
+                            <div>lorem</div>
+                        </div>
+                        <div class="linea">
+                            <div class="pallina medium">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="blocco-linea">
+                        <div class="testi">
+                            <div>lorem</div>
+                            <div>lorem</div>
+                        </div>
+                        <div class="linea">
+                            <div class="pallina bad">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="blocco-linea">
+                        <div class="testi">
+                            <div>lorem</div>
+                            <div>lorem</div>
+                        </div>
+                        <div class="linea">
+                            <div class="pallina good">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="blocco-linea">
+                        <div class="testi">
+                            <div>lorem</div>
+                            <div>lorem</div>
+                        </div>
+                        <div class="linea">
+                            <div class="pallina max">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+              </div> 
+            </div>
+        </div>
+    </section>
+<script>
+    document.onclick = function(e) {
+        console.log(e.srcElement.className)
+        if (e.srcElement.className === 'menu' || e.srcElement.className === 'linea-menu') {
+            const leftDiv = document.querySelector('.left-content')
+            leftDiv.classList.toggle('show')
+        }
+}
+</script>
+</body>  
+</html>    
