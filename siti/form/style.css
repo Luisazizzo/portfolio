@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "horror";
+  src: url("font/Bloody.eot");
+  src: url("font/Bloody.woff") format("woff"),
+    url("font/Bloody.otf") format("opentype");
+}
+h1 {
+  font-family: "horror", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
+}
+body {
+  color: #f46b08;
+  background: #000;
+}
+.logo {
+  position: relative;
+  text-align: center;
+
+  padding: 30px;
+}
+.bg {
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  opacity: 0.6;
+}
+header {
+  background-color: #f46b08;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+@media screen and (max-width: 900px) {
+  .vuoto {
+    display: none;
+  }
+}
+form {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 600px;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+}
+form div {
+  margin-bottom: 10px;
+}
+.sesso {
+  display: flex;
+  gap: 20px;
+}
+input,
+textarea {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.invia {
+  background-color: #f46b08;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+}
