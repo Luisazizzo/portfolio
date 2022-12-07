@@ -64,6 +64,12 @@ section .img {
 section:hover .img {
   filter: brightness(1);
 }
+.img7 {
+  background-image: url("img/form.png");
+}
+.img6 {
+  background-image: url("img/mobili.png");
+}
 .img5 {
   background-image: url("img/mc-donalds.png");
 }
@@ -113,6 +119,12 @@ i:hover {
 @media screen and (max-width: 900px) {
   section .img {
     filter: brightness(1);
+  }
+  .img7 {
+    background-image: url("img/form-mobile.png");
+  }
+  .img6 {
+    background-image: url("img/mobili-mobile.png");
   }
   .img5 {
     background-image: url("img/mc-mobile.png");
